@@ -1,10 +1,12 @@
 import React from 'react'
 
-function Counter(props) {
+function Counter({title,count,place}) {
+  // const {title,count} = props
+  
   return (
     <div>
     
-      <h1> Counter: <span style={{color:'blueviolet'}}>{props.count}</span></h1>     
+      <h4> {title} <span style={{color:'blueviolet'}}>{count} {place}</span></h4>     
 
     </div>
   )
