@@ -1,5 +1,6 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 }
 
 button{
@@ -32,7 +33,7 @@ button{
 
   
   button{
-    color: #000000;
+    color: #ffffff;
   border-color: #206592;
     position: relative;
     height: 50px;
@@ -45,7 +46,7 @@ button{
     text-transform: uppercase;
     border: 1px solid transparent;
     outline: none;
-    background: #ffffff;
+    background: #500000;
     overflow: hidden;
     transition: 0.6s;
 
