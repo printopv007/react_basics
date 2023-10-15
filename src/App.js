@@ -56,8 +56,8 @@ function App() {
 //   );
 return(
 <>
-  <button onClick={()=>setState(!state)}>Show/Hide </button>  
-{ state && <Counter2 /> }
+  {/* <button onClick={()=>setState(!state)}>Show/Hide </button>  
+{ state && <Counter2 /> } */}
    
 </>
 )
