@@ -1,10 +1,8 @@
 import './App.css';
 import Counter2 from './components/Counter2';
-import { useState } from 'react';
-
 
 function App() {
-  const [state,setState]=useState(false);
+  // const [state,setState]=useState(false);
 //   const [count,setCount] = useState(0)
 //   const addCount=()=>{
 //     setCount(count+1)
@@ -58,7 +56,7 @@ return(
 <>
   {/* <button onClick={()=>setState(!state)}>Show/Hide </button>  
 { state && <Counter2 /> } */}
-   
+   <Counter2/>
 </>
 )
 
