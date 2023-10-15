@@ -1,8 +1,92 @@
-.hello{
-    background-color: #460000a4;
+*{
+    font-family: 'Montserrat', sans-serif;
 }
 
 button{
- margin-left: 30px;
- margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  html,body{
+    display: grid;
+    place-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100%;
+    width: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  
+  button{
+    color: #000000;
+  border-color: #206592;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    margin: 0 40px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    background: #ffffff;
+    overflow: hidden;
+    transition: 0.6s;
+
+}
+
+
+button:before, button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.6s;
+  }
+  button:before{
+    width: 60px;
+    background: rgba(255,255,255,0.6);
+    transform: translateX(-130px) skewX(-45deg);
+  }
+  button:after{
+    width: 30px;
+    background: rgba(255,255,255,0.6);
+    transform: translateX(-130px) skewX(-45deg);
+  }
+  button:hover:before,
+  button:hover:after{
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+  }
+  button:hover{
+    color: #f2f2f2;
+  }
+  button:hover{
+    background: #206592;
+  }
+  
+
+.App{
+    border-radius: 10px;
+    height: 250px;
+    background-color: #46ff25a4;
 }

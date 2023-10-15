@@ -6,8 +6,7 @@ function Counter({title,count,place}) {
   return (
     <div>
     
-      <h4> {title} <span style={{color:'blueviolet'}}>{count} {place}</span></h4>     
-
+      <h1> {title} <span style={{color:'blueviolet'}}>{count} {place}</span></h1>     
     </div>
   )
 }

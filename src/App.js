@@ -1,24 +1,27 @@
 import './App.css';
-import Counter2 from './components/Counter2';
+import Counter from './components/Counter';
+import { useState } from 'react';
 
 function App() {
-  // const [state,setState]=useState(false);
-//   const [count,setCount] = useState(0)
-//   const addCount=()=>{
-//     setCount(count+1)
-//   }
-//   const subCount=()=>{
-//     setCount(count-1)
-//   }
-//   const mulCount=()=>{
-//     setCount(count*count)
-//   }
+  const [count,setCount] = useState(0)
+  const addCount=()=>{
+    setCount(count+1)
+  }
+  const subCount=()=>{
+    setCount(count-1)
+  }
+  const mulCount=()=>{
+    setCount(count*count)
+  }
+  const resetCount =()=>{
+    setCount(count*0)
+  }
 
-//   let counter ={
-//     title : 'First Counter',
-//     count ,
-//     place :'Spread Operator used'
-//   }
+  // let counter ={
+  //   title : 'First Counter',
+  //   count ,
+  //   place :'Spread Operator used'
+  // }
 
 //   let student =[{name:'Printo',age:22},
 //   {name:'Prinu',age:26},
@@ -26,39 +29,33 @@ function App() {
 // ]
 
   
-//   return (
-//     <>
-//     <div className="App"> 
-//     <h1>Counter</h1>
-//      <Counter title='First counter' count={count} />
-//       <Counter {...counter}/>   {/* spreadOperator is '...' */}
-//      <Counter title='Second counter' count={count} />
+  return (
+    <>
+    
+    <div className="App" style={{textAlign:'center'}}> 
+    <br/>
+    <h1>Counter Project</h1>
+     <Counter title= ' Increment Counter' count={count} />
+      {/* <Counter {...counter}/>   spreadOperator is '...' */}
+     {/* <Counter title='Second counter' count={count} /> */}
 
-//      <button onClick={addCount} >Add + 1</button> 
-//      <button onClick={subCount} >Sub - 1</button>
-//      <button onClick={mulCount} >Mul * {count}</button>
+     <button  onClick={addCount} >Add + 1</button> 
+     <button onClick={subCount} >Sub - 1</button>
+     <button  onClick={mulCount} >Mul * {count}</button>
+     <button  onClick={resetCount} >Reset</button>
       
-//       <h1>Student Data</h1>
+    </div>
+   </>
+  );
+// return(
+// <>
+//   {/* <button onClick={()=>setState(!state)}>Show/Hide </button>  
+// { state && <Counter2 /> } */}
+//    {/* <Counter2/>
+//    <Counter/> */}
 
-//       { 
-//         student.map((obj,index)=>
-//           (
-//         // <Student key={index} name={obj.name} age={obj.age}/> with return function
-//         <Student key={index} {...obj}/>          //without return function
-//         )
-// ) 
-
-//       }
-//     </div>
-//    </>
-//   );
-return(
-<>
-  {/* <button onClick={()=>setState(!state)}>Show/Hide </button>  
-{ state && <Counter2 /> } */}
-   <Counter2/>
-</>
-)
+// </>
+// )
 
 
 }
