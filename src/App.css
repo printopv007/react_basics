@@ -4,7 +4,7 @@
 }
 
 button{
-    margin: 0;
+    margin-top: 10px !important;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat',sans-serif;
@@ -14,7 +14,7 @@ button{
     place-items: center;
     background: linear-gradient(-45deg, #fff200, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 5s ease infinite;
 	height: 100%;
     width: 100%;
 }
@@ -42,10 +42,10 @@ button{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 1px solid transparent;
     outline: none;
-    background: #500000;
+    background: #16db65a4;
     overflow: hidden;
     transition: 0.6s;
 
@@ -58,7 +58,7 @@ button:before, button:after{
     left: 0;
     top: 0;
     height: 100%;
-    filter: blur(30px);
+    filter: blur(10px);
     opacity: 0.4;
     transition: 0.6s;
   }
@@ -86,7 +86,10 @@ button:before, button:after{
   
 
 .App{
-    border-radius: 10px;
-    height: 250px;
-    background-color: #ff2525a4;
+  height: 300px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(4, 5, 8, 0.578);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
