@@ -31,20 +31,18 @@ function App() {
   
   return (
     <>
-    
-    <div className="App" style={{textAlign:'center'}}> 
+<div className="App" style={{textAlign:'center'}}> 
     <br/>
-    <h1>Counter Project</h1>
-     <Counter title= ' Increment Counter' count={count} />
+    <h1>My Counter</h1>
+     <Counter title= ' Increment Counter ' count={count} />
       {/* <Counter {...counter}/>   spreadOperator is '...' */}
      {/* <Counter title='Second counter' count={count} /> */}
 
      <button  onClick={addCount} >Add + 1</button> 
      <button onClick={subCount} >Sub - 1</button>
      <button  onClick={mulCount} >Mul * {count}</button>
-     <button  onClick={resetCount} >Reset</button>
-      
-    </div>
+     <button  onClick={resetCount} >Reset </button>
+ </div>
    </>
   );
 // return(
