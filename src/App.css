@@ -87,9 +87,9 @@ button:before, button:after{
 
 .App{
   height: 300px;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(4, 5, 8, 0.578);
+  backdrop-filter: blur(15px) saturate(112%);
+  -webkit-backdrop-filter: blur(25px) saturate(112%);
+  background-color: rgba(255, 255, 255, 0.09);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
